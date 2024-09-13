@@ -38,7 +38,9 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
              Text(
               currentQuestion.text,
               style: const TextStyle(
-                color: Colors.white,
+                color:  Color.fromARGB(255, 201, 153, 251),
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
               ),
               textAlign: TextAlign.center, //Center the text
             ),
