@@ -1,6 +1,6 @@
 import 'package:quiz_app/models/quiz_questions.dart';
 
-
+// The first question is always the correct one
 const questions = [
   QuizQuestion(
     'What are the main building blocks of Flutter UIs?',
