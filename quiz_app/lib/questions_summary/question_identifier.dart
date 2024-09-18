@@ -37,7 +37,7 @@ class QuestionIdentifier extends StatelessWidget {
       alignment: Alignment.center, // Centers the content inside the container
       decoration: BoxDecoration(
         color: isCorrectAnswer // Sets the background color based on whether the answer is correct.
-            ? const Color.fromARGB(255, 241, 150, 214) 
+            ? const Color.fromARGB(255, 150, 198, 241)
             : const Color.fromARGB(255, 249, 133, 241),
         borderRadius: BorderRadius.circular(100), 
       ),
