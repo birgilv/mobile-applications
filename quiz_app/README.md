@@ -1,16 +1,16 @@
-# quiz_app
+# Assignment 1 - Quiz Application
 
-A new Flutter project.
+This is an quiz application made in the course IDATA2305 - Mobile Application. The applcation is made my following the tutorial, section 3: Flutter & Dart Basics II - Fundementals deep dive [QUIZ APP], from the Udemy course "Flutter & Dart" - The complete Guide [2024 Edition]. Here is a [link](https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/?couponCode=SKILLS4SALEA) to the online course.
 
-## Getting Started
+## App architecture
 
-This project is a starting point for a Flutter application.
+## User stories
 
-A few resources to get you started if this is your first Flutter project:
+## Specififcation
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## File and folder structure
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Class diagram
+
+## Group work
+I completed the task for this assignment alone without a group. Therefore, there is not much to say about the teamwork for this project.
