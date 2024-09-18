@@ -6,6 +6,7 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_app/answer_button.dart';
 import 'package:quiz_app/data/questions.dart';
+import 'package:quiz_app/process_indicator.dart';
 
 
 /*
@@ -15,7 +16,10 @@ import 'package:quiz_app/data/questions.dart';
         selected answer as a parameter.
 */
 class QuestionsScreen extends StatefulWidget {
-  const QuestionsScreen({super.key, required this.onSelectAnswer});
+  const QuestionsScreen({
+    super.key, 
+    required this.onSelectAnswer,
+  });
 
   final void Function(String answer) onSelectAnswer; // Callback function for handling selected answers
 
@@ -82,9 +86,15 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
                 answerText: answer, 
                 onTap: () {
                   answerQuestion(answer);
+                  
                 },
               );
-            })
+            }),
+            const SizedBox(height: 30,),
+            ProgressIndicatorWidget( // A process indicator
+              questionNumber: currentQuestionIndex + 1,
+              numTotalQuestions: questions.length,
+            ),
           ],
         ),
       ),
