@@ -50,6 +50,7 @@ Contains a button that initiates the quiz.
     * **/question_identifier.dart** is a helper file to identify which question is being displayed.
 
 ## Class diagram
+![Class diagram](assets/images/classdiagram.png)
 
 ## Group work
 I completed the task for this assignment individually without a group.
