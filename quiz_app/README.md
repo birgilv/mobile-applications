@@ -20,8 +20,28 @@ When the user has completed the quiz, the screen switches from the question- to 
 If the user press the restart button, the quiz is reset. The user is redirected to the start screen, where the screen switches from the results- to the startscreen. The user is now able to restart the quiz, and all the previous answers is cleard. 
 
 ## Specififcation
+A simple quiz application created with Flutter and Dart, where a user can answer multiple-choice questions and get a summary of their results. The quiz opens with the start screen where a start quiz button is displayed. When the quiz is started a question screen with a single question is shown. This is a multiple-choice quiz question with four options, and a progress indicator to show how many questions are left. When the quiz is completed the result screen is displayes, where a summary the user's performance is shown.
 
 ## File and folder structure
+This structure ensures a separation of concerns, clean organization, and maintainability. Each file has a specific role within the app’s architecture. This breakdown allows each screen and widget to be modular, making it easier to maintain and enhance specific parts of the app as the quiz evolves or gains new features.
+
+* **lib** houses the main functionality of the app, including screens (start, quiz, result), UI components, and central quiz logic.
+    * **/main.dart** is the main entry point of the application and manages initial routing and setting up the app’s navigation structure.
+    * **/quiz.dart** is the core logic of the quiz, and manages quiz state, transitions between questions, and collects answers.
+    * **/start_screen.dart** is the initial screen where the user starts the quiz.
+Contains a button that initiates the quiz.
+    * **/questions_screen.dart** is the main quiz screen that displays the current question and possible answers.
+    * **/results_screen.dart** displays the user’s quiz results after the quiz is complete.
+    * **/answer_button.dart** contains the widget for rendering the quiz answer buttons and handles user interaction for answer selection.
+    * **/process_indicator.dart** displays a progress bar showing how many questions are left in the quiz.
+* **lib/data** stores the raw data, like quiz questions, that is used across the app.
+    * **/questions.dart** stores a list of quiz questions and acts as a central repository for quiz data
+* **lib/models** defines the data structure of key elements (e.g., quiz questions).
+    * **/quiz_questions.dart** defines the structure of a quiz question (e.g., question text, answer options, correct answer).
+* **lib/questions_summary** contains all widgets and files related to displaying the quiz summary and individual question results.
+    * **/questions_summary.dart** displays a summary of the quiz results, showing each question and its correct answer.
+    * **/summary_item.dart** is a widget that helps display individual items in the quiz summary.
+    * **/question_identifier.dart** is a helper file to identify which question is being displayed.
 
 ## Class diagram
 
