@@ -2,6 +2,12 @@
 
 This is an quiz application made in the course IDATA2305 - Mobile Application. The applcation is made my following the tutorial, section 3: Flutter & Dart Basics II - Fundementals deep dive [QUIZ APP], from the Udemy course "Flutter & Dart" - The complete Guide [2024 Edition]. Here is a [link](https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/?couponCode=SKILLS4SALEA) to the online course.
 
+## Installation
+1. Clone this repository quiz_app
+2. Select an emulator to launch
+3. Navigate to the main.dart file and the main function
+4. Run the application
+
 ## App architecture
 The Quiz App follows a simple, structured architecture that separates files into different layers. The architecture is designed for maintainability and scalability, focusing on breaking down the app's functionality into smaller, reusable components. This approach leverages the strengths of Dart and Flutter in creating clean, responsive, and fast UI applications.
 
@@ -46,7 +52,7 @@ Contains a button that initiates the quiz.
 ## Class diagram
 
 ## Group work
-I completed the task for this assignment alone without a group. Therefore, there is not much to say about the teamwork for this project.
+I completed the task for this assignment individually without a group.
 
 ## Additional feature
 For the additional feature a progress indicator was added. The progress indicator display the current question of the total amount of questions in the questionset. Typically used on webpages, such as newspaper or photo galleries. By adding a progress indicator the user knows their progress throughout the quiz. The see both their current question number and the total amout of question to answer. 
