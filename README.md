@@ -2,7 +2,8 @@
 This is a repository for the assignments given in the class IDATA2503 - Mobile Applications. 
 
 ## Assignments
-1. Assingment 1- Quiz app
+1. Assingment 1 - Quiz app
+2. Assignment 2 - Meals app
 
 ## Couse description
 
