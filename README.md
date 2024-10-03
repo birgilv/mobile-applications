@@ -1,5 +1,5 @@
 # Course Assignments
-This is a repository for the assignments given in the class IDATA2503 - Mobile Applications. 
+This is a repository for the assignments given in the class IDATA2503 - Mobile Applications. This is a third year course, teached in the Bachelor's Degree in Computer Science by lecturer Rituka Jaiswal.
 
 ## Assignments
 1. Assingment 1 - Quiz app
