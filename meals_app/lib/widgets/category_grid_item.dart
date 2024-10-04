@@ -12,6 +12,7 @@ final Category category;
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: const EdgeInsets.all(60),
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
@@ -25,7 +26,7 @@ final Category category;
       child: Text(
         category.title, 
         style: Theme.of(context).textTheme.titleLarge!.copyWith(
-          color: Theme.of(context).colorScheme.onBackground,
+          color: Theme.of(context).colorScheme.onSurface,
         ),
       ),
     );
