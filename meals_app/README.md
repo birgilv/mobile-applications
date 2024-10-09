@@ -1,6 +1,6 @@
 # Assignment 1 - Meals Application
 
-This is a meals application made in the course IDATA2305 - Mobile Application. The applcation is made my following the tutorial, section 8: Building Multi-Screen Apps & Navigating Between Screens [MEALS APP] and section 9: Managing Appwide State [MEALS APP], from the Udemy course "Flutter & Dart" - The complete Guide [2024 Edition]. Here is a [link](https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/?couponCode=SKILLS4SALEA) to the online course.
+This is a meals application made in the course IDATA2305 - Mobile Application. The applcation is made my following the tutorial, section 8: Building Multi-Screen Apps & Navigating Between Screens [MEALS APP] from the Udemy course "Flutter & Dart" - The complete Guide [2024 Edition]. Here is a [link](https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/?couponCode=SKILLS4SALEA) to the online course.
 
 ## Installation
 1. Clone this repository quiz_app
