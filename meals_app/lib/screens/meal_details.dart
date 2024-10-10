@@ -1,6 +1,15 @@
+/*
+ * MealDetailsScreen displays detailed information about a selected meal,
+ * including its title, image, ingredients, and preparation steps. It also allows
+ * the user to toggle the meal as a favorite.
+ */
 import 'package:flutter/material.dart';
 import 'package:meals_app/models/meal.dart';
 
+/*
+ * MealDetailsScreen is a stateless widget that takes a Meal object as a required parameter,
+ * along with a callback function onToggleFavorite for marking the meal as a favorite.
+ */
 class MealDetailsScreen extends StatelessWidget{
   const MealDetailsScreen({
     super.key, 
@@ -8,9 +17,13 @@ class MealDetailsScreen extends StatelessWidget{
     required this.onToggleFavorite,
   });
 
-  final Meal meal;
-  final void Function(Meal meal) onToggleFavorite;
+  final Meal meal; // The meal object whose details are being displayed
+  final void Function(Meal meal) onToggleFavorite; // Callback function for toggling the meal as a favorite
 
+  /*
+   * build creates the user interface for the meal details screen.
+   * It includes the meal image, ingredients, and preparation steps.
+   */
   @override
   Widget build(BuildContext context) {
     return Scaffold(

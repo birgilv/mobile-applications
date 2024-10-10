@@ -1,3 +1,8 @@
+/*
+ * A widget that represents a grid item for a meal category. 
+ * It displays the category title and a gradient background.
+ * When tapped, it triggers the provided callback function.
+ */
 import 'package:flutter/material.dart';
 import 'package:meals_app/models/category.dart';
 
@@ -8,9 +13,13 @@ class CategoryGridItem extends StatelessWidget {
     required this.onSelectCategory,
   });
 
-  final Category category;
-  final void Function() onSelectCategory;
+  final Category category; // The category this grid item represents.
+  final void Function() onSelectCategory; // Callback function triggered when the grid item is tapped.
 
+  /*
+   * The build method returns an InkWell wrapped container to show the category.
+   * It uses a gradient background and responds to user taps.
+   */
   @override
   Widget build(BuildContext context) {
     return InkWell(

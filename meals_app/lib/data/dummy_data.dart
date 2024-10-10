@@ -1,8 +1,16 @@
+/*
+ * This file contains a list of available meal categories and dummy meal data for use in a Meal App. 
+ * The data is used to display various meals, their ingredients, and preparation steps in the app.
+ * Constants in Dart should be written in lowerCamelcase.
+ */
+
 import 'package:flutter/material.dart';
 import 'package:meals_app/models/category.dart';
 import 'package:meals_app/models/meal.dart';
 
-// Constants in Dart should be written in lowerCamelcase.
+/*
+ * List of available categories for meals. Each category is represented by a unique ID, title, and color.
+ */
 const availableCategories = [
   Category(
     id: 'c1',
@@ -56,6 +64,9 @@ const availableCategories = [
   ),
 ];
 
+/*
+ * List of dummy meals for the app. Each meal contains details such as title, ingredients, preparation steps, and dietary restrictions.
+ */
 const dummyMeals = [
   Meal(
     id: 'm1',

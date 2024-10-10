@@ -1,13 +1,21 @@
 import 'package:flutter/material.dart';
 
+/*
+ * MainDrawer is a widget that provides navigation options to the user.
+ * It includes options for viewing meals, applying filters, and selecting a random meal.
+ */
 class MainDrawer extends StatelessWidget{
   const MainDrawer({
     super.key,
     required this.ofSelectScreen
   });
   
-  final void Function(String identifier) ofSelectScreen;
+  final void Function(String identifier) ofSelectScreen; // A callback function that takes a screen identifier and navigates accordingly.
 
+  /*
+   * The build method creates the drawer UI, which consists of a header and 
+   * a list of navigation options like Meals, Filters, and Random meal.
+   */
   @override
   Widget build(BuildContext context) {
     return Drawer(

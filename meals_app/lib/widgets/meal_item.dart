@@ -3,6 +3,10 @@ import 'package:meals_app/models/meal.dart';
 import 'package:meals_app/widgets/meal_item_trait.dart';
 import 'package:transparent_image/transparent_image.dart';
 
+/*
+ * MealItem is a widget that displays the details of a meal including its image, title, 
+ * duration, complexity, and affordability. It allows users to select the meal by tapping on it.
+ */
 class MealItem extends StatelessWidget{
   const MealItem({
     super.key,
@@ -13,14 +17,27 @@ class MealItem extends StatelessWidget{
   final Meal meal;
   final void Function(Meal meal) onSelectMeal;
 
+  /*
+   * Returns the complexity of the meal with the first letter capitalized.
+   * E.g., 'simple' becomes 'Simple'.
+   */
   String get complexityText {
     return meal.complexity.name[0].toUpperCase() + meal.complexity.name.substring(1); //acces the first character and make it uppercase
   }
 
+  /*
+   * Returns the affordability of the meal with the first letter capitalized.
+   * E.g., 'affordable' becomes 'Affordable'.
+   */
   String get affaordabilityText {
     return meal.affordability.name[0].toUpperCase() + meal.affordability.name.substring(1); //acces the first character and make it uppercase
   }
 
+  /*
+   * The build method returns a Card widget containing the meal image, title, and traits 
+   * such as duration, complexity, and affordability. 
+   * The meal can be selected by tapping the card.
+   */
   @override
   Widget build(BuildContext context) {
     return Card(
