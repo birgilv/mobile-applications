@@ -1,9 +1,13 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:meals_app/data/dummy_data.dart';
 import 'package:meals_app/models/meal.dart';
 import 'package:meals_app/screens/categories.dart';
 import 'package:meals_app/screens/filters.dart';
+import 'package:meals_app/screens/meal_details.dart';
 import 'package:meals_app/screens/meals.dart';
+import 'package:meals_app/screens/random_meal.dart';
 import 'package:meals_app/widgets/main_drawer.dart';
 
 const kInitialFilters = {
@@ -32,7 +36,7 @@ class _TabsScreenState extends State<TabsScreen> {
     ScaffoldMessenger.of(context).clearSnackBars();
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        content: Text(message)
+        content: Text(message),
       ),
     );
   }
@@ -71,9 +75,24 @@ class _TabsScreenState extends State<TabsScreen> {
       setState(() {
         _selectedFilters = result ?? kInitialFilters;
       });
+    } else if (identifier == 'random') {
+    final random = Random();
+    final List<Meal> randomMeal = [];
+    randomMeal.add(dummyMeals[random.nextInt(dummyMeals.length)]);
+
+
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (ctx) => RandomMealScreen(
+          meal: randomMeal,
+          onToggleFavorite: _toggleFavoriteMealStatus,
+        ),
+      ),
+    );
     }
   }
 
+  
 
   @override
   Widget build(BuildContext context) {

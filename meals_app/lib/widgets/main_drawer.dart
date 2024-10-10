@@ -75,6 +75,23 @@ class MainDrawer extends StatelessWidget{
               ofSelectScreen('filters');
             },
           ),
+          ListTile(
+            leading: Icon(
+              Icons.casino,
+              size: 26,
+              color: Theme.of(context).colorScheme.onSurface,
+            ),
+            title: Text(
+              'Random meal',
+              style: Theme.of(context).textTheme.titleSmall!.copyWith(
+                color: Theme.of(context).colorScheme.onSurface,
+                fontSize: 24,
+              ),
+            ),
+            onTap: () {
+              ofSelectScreen('random');
+            },
+          ),
         ],
       ),
     );
