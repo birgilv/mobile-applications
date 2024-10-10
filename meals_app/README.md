@@ -67,7 +67,7 @@ The Meals App is a user-friendly application built with Flutter and Dart that al
     * **/meal_item_trait.dart** is a helper widget used within meal_item.dart to display meal attributes such as cooking time, complexity, and cost.
 
 ## Class diagram
-![Class diagram](assets/images/classdiagram.png)
+![Class diagram](assets/images/meal_app.png)
 
 ## Group work
 I completed the task for this assignment individually without a group.
