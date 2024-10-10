@@ -5,13 +5,13 @@ This is a meals application made in the course IDATA2305 - Mobile Application. T
 ## Installation
 1. Clone this repository meals_app <br />
     Use one of the following commands to clone the meals_app repository:
-    * HTTPS
+* HTTPS
 
-        https://github.com/birgilv/mobile-applications.git
+    https://github.com/birgilv/mobile-applications.git
 
-    * SSH
+* SSH
     
-        SSH: git@github.com:birgilv/mobile-applications.git
+    git@github.com:birgilv/mobile-applications.git
 
 2. Select an Emulator<br />
     Choose an emulator to launch for testing the application.
